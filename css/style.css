@@ -1,15 +1,24 @@
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    background: linear-gradient(270deg, #74797e, #d4254e, #2eb8df);
+    background-size: 300% 300%;
+    animation: gradientAnimation 6s ease infinite;
 }
 
 header {
-    background: #333;
-    color: white;
-    padding: 1rem;
+    text-align: center; 
+    font-family: "Poppins", sans-serif; 
+    font-size: 2rem;
+    font-weight: bold; 
+    color: #ffffff; 
+    padding: 20px 0; 
 }
+
 
 nav ul {
     list-style: none;
@@ -47,15 +56,28 @@ input, textarea, button {
     gap: 20px;
 }
 
+@keyframes backgroundChange {
+    0% {
+        background-color: #b340ff; 
+    }
+    50% {
+        background-color: #c3e95b; 
+    }
+    100% {
+        background-color: #2affed; 
+    }
+}
+
 .section {
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 30%;
+    width: 33%;
     min-width: 250px;
     display: inline-block;
     margin: auto;
+    animation: backgroundChange 10s ease infinite; 
 }
 
 /* Button Styles */
@@ -71,6 +93,7 @@ input, textarea, button {
 
 .btn:hover {
     background: #0056b3;
+    cursor: pointer;
 }
 
 /* About Page Layout */
@@ -111,8 +134,8 @@ input, textarea, button {
 }
 
 .skills-list li {
-    background: #007BFF;
-    color: white;
+    background: #6df3f8;
+    color: rgb(0, 0, 0);
     padding: 5px 10px;
     margin: 5px 0;
     display: inline-block;
@@ -126,3 +149,17 @@ input, textarea, button {
     object-fit: cover;
     border: 3px solid #007BFF;
 }
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+div.intro p, div.experience p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #c3e95b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
