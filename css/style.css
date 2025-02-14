@@ -5,7 +5,7 @@
 }
 
 body {
-    background: linear-gradient(270deg, #74797e, #d4254e, #2eb8df);
+    background: linear-gradient(270deg, #0b85ff, #5e5e5e, #3db6d8);
     background-size: 300% 300%;
     animation: gradientAnimation 6s ease infinite;
 }
@@ -67,20 +67,54 @@ input, textarea, button {
         background-color: #2affed; 
     }
 }
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
 
+    .section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-pic {
+        margin-bottom: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+.section:hover {
+    transform: translateY(-20px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
 .section {
+    cursor: pointer;
+    transition: all 1s ease;
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 33%;
+    width: 33% 33% 33%;
     min-width: 250px;
     display: inline-block;
     margin: auto;
-    animation: backgroundChange 10s ease infinite; 
+    animation: backgroundChange 20s ease infinite; 
 }
 
-/* Button Styles */
 .btn {
     display: inline-block;
     margin-top: 10px;
@@ -91,9 +125,27 @@ input, textarea, button {
     border-radius: 5px;
 }
 
-.btn:hover {
-    background: #0056b3;
-    cursor: pointer;
+.about-content {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    background: linear-gradient(270deg, #8cc5ff, #8cc5ff, #8cc5ff);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    animation: aboutBackgroundChange 8s ease infinite;
+}
+
+@keyframes aboutBackgroundChange {
+    0% {
+        background-color: #273325; 
+    }
+    50% {
+        background-color: #fda085; 
+    }
+    100% {
+        background-color: #1e700e; 
+    }
 }
 
 /* About Page Layout */
@@ -102,17 +154,7 @@ input, textarea, button {
     justify-content: center;
     align-items: center;
     padding: 3rem;
-    background-color: #f4f4f4;
-}
-
-.about-content {
-    display: flex;
-    align-items: center;
-    max-width: 900px;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
 }
 
 .profile-pic {
@@ -162,4 +204,85 @@ div.intro p, div.experience p{
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.project-showcase{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.projects-list{
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projects-list li{
+    background: #ffffff6e;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.projects-list li:hover {
+    transform: translateY(-20px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.follow-me{
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.social-links{
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-size: auto;
+}
+
+.social-links li a:hover {
+    background: #535353;
+}
+
 
