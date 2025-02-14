@@ -1,22 +1,40 @@
-body{
-    font-family: 'Roboto', sans-serif;
-    margin: auto;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 0;
     text-align: center;
 }
 
-header{
-    background-color: #333;
+header {
+    background: #333;
     color: white;
     padding: 1rem;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     padding: 0;
 }
 
-nav ul li{
+nav ul li {
     display: inline;
-    margin-right: 1rem;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+}
+
+input, textarea, button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
 }
