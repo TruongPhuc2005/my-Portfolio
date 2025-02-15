@@ -285,4 +285,39 @@ div.intro p, div.experience p{
     background: #535353;
 }
 
+.project1 {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
 
+.project1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+    background: rgb(245, 245, 86);
+}
+
+.project2:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+    background: rgb(105, 105, 240);
+}
+
+.project3:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+    background: rgb(255, 105, 105);
+}
+
+.project4:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+    background: rgb(105, 255, 105);
+}
+
+.project5:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+    background: rgb(245, 92, 250);
+}
