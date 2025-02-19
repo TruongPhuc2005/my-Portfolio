@@ -332,6 +332,7 @@ div.intro p, div.experience p{
 }
 
 .myname:hover{
+    animation: all 0.3s ease-in-out;
     color:rgb(255, 227, 227);
-    transform: rotateX(-30px);
+    transform: translateY(-10px);
 }
