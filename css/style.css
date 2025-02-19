@@ -329,10 +329,20 @@ div.intro p, div.experience p{
     padding-bottom: 20px;
     color:rgb(255, 227, 227);
     cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease;  
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    background: transparent;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
 }
 
 .myname:hover{
-    animation: all 0.3s ease-in-out;
     color:rgb(255, 227, 227);
     transform: translateY(-10px);
 }
