@@ -324,7 +324,6 @@ div.intro p, div.experience p{
 
 .myname{
     text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 300;
     padding-bottom: 20px;
     color:rgb(255, 227, 227);
@@ -340,6 +339,9 @@ div.intro p, div.experience p{
     border-radius: 5px;
     text-align: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .myname:hover{
