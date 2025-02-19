@@ -321,3 +321,11 @@ div.intro p, div.experience p{
     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
     background: rgb(245, 92, 250);
 }
+
+.myname{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    padding-bottom: 20px;
+    color:rgb(255, 227, 227);
+}
