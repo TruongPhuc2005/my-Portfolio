@@ -328,4 +328,10 @@ div.intro p, div.experience p{
     font-weight: 300;
     padding-bottom: 20px;
     color:rgb(255, 227, 227);
+    cursor: pointer;
+}
+
+.myname:hover{
+    color:rgb(255, 227, 227);
+    transform: rotateX(-30px);
 }
