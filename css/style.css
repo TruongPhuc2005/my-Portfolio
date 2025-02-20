@@ -342,3 +342,9 @@ div.intro p, div.experience p{
     justify-content: center;
 }
 
+.myname:hover{
+    color:rgb(255, 227, 227);
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+    background: #007BFF;
+}
