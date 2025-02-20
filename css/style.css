@@ -340,8 +340,6 @@ div.intro p, div.experience p{
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .myname:hover{
