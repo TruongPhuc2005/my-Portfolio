@@ -125,6 +125,10 @@ input, textarea, button {
     border-radius: 5px;
 }
 
+li:hover::after{
+    width: 100%;
+
+}
 .about-content {
     display: flex;
     align-items: center;
@@ -361,5 +365,4 @@ div.intro p, div.experience p{
 
 button:hover::after{
     height: 100%;
-
 }
