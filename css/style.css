@@ -55,6 +55,21 @@ input, textarea, button {
     padding: 2rem;
     gap: 20px;
 }
+h1{
+    text-align: flex;
+    display: fixed;
+    width: 100%;
+    font-family:  monospace;
+    text-wrap: nowrap;
+    overflow: hidden;
+    animation: typing 5s steps(50) infinite alternate-reverse;
+}
+
+@keyframes typing {
+    from{
+        width: 0ch;
+    }
+}
 
 @keyframes backgroundChange {
     0% {
