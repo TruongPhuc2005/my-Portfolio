@@ -5,7 +5,7 @@
 }
 
 body {
-    background: radial-gradient(circle, #0b85ff, #5e5e5e, #3db6d8);
+    background: conic-gradient(from 45deg, #0b85ff, #5e5e5e, #3db6d8);
     background-size: 300% 300%;
     animation: gradientAnimation 6s ease infinite;
 }
