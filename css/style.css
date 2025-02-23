@@ -172,7 +172,6 @@ li:hover::after{
     }
 }
 
-/* About Page Layout */
 .about-container {
     display: flex;
     justify-content: center;
